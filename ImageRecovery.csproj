@@ -33,6 +33,10 @@
     <Reference Include="ImageEditor">
       <HintPath>..\..\ImageEditor.dll</HintPath>
     </Reference>
+    <Reference Include="ImageRecovery, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ImageRecovery.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -46,9 +50,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NonBlind\InverseFiltering.cs" />
-    <Compile Include="NonBlind\TikhonovFiltering.cs" />
-    <Compile Include="NonBlind\WienerFiltering.cs" />
-    <Compile Include="OpticalTransferFunction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
