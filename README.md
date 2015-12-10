@@ -17,10 +17,10 @@
 ```c#
 image2 = InverseFiltering.Filtering(image1, psf);
 ```
-image1 — искаженное изображение, psf — оператор искажения.
+image1 — искаженное изображение типа Image, psf — оператор искажения типа [ConvolutionFilter](https://github.com/Kovnir/ImageEditor/blob/master/Tools/ConvolutionFilter.cs).
 
 ### Пример2
 ```c#
 image2 = InverseFiltering.Filtering(image1, psf);
 ```
-image1 — трехмерная матрица содержащая RGB-каналы изображения, psf — оператор искажения.
+image1 — трехмерная матрица типа double содержащая RGB-каналы изображения, psf — оператор искажения типа [ConvolutionFilter](https://github.com/Kovnir/ImageEditor/blob/master/Tools/ConvolutionFilter.cs).
