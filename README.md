@@ -1,8 +1,8 @@
 # ImageRecovery
 Библиотека алгоритмов реконструкции расфокусированных изображений.
 
-## Опсание
-Библиотека была разработана как часть дипломной работы. Она включает в себя ещё три части: [Легковесная библиотека для работы с изображениями на .NET](https://github.com/Kovnir/ImageEditor), [Модифицированный алгоритм восстановления изображений](https://github.com/Kovnir/DeblurModification), [Пример интеграции с данной библиотекой](https://github.com/xsimbvx/IRIntegration). Сборка проекта производилась в Microsoft Visual Studio 2015.
+## Описание
+Библиотека была разработана как часть дипломной работы. Она включает в себя ещё три части: [Легковесная библиотека для работы с изображениями на .NET](https://github.com/Kovnir/ImageEditor), [Модифицированный алгоритм восстановления изображений](https://github.com/Kovnir/DeblurModification), [Пример интеграции с библиотеками](https://github.com/xsimbvx/IRIntegration). Сборка проекта производилась в Microsoft Visual Studio 2015.
 
 
 ### Инверсная фильтрация
@@ -17,10 +17,10 @@
 ```c#
 image2 = InverseFiltering.Filtering(image1, psf);
 ```
-image1 — искаженное изображение, psf — оператор искажения.
+image1 — искаженное изображение типа Image, psf — оператор искажения типа [ConvolutionFilter](https://github.com/Kovnir/ImageEditor/blob/master/Tools/ConvolutionFilter.cs).
 
 ### Пример2
 ```c#
 image2 = InverseFiltering.Filtering(image1, psf);
 ```
-image1 — трехмерная матрица содержащая RGB-каналы изображения, psf — оператор искажения.
+image1 — трехмерная матрица типа double содержащая RGB-каналы изображения, psf — оператор искажения типа [ConvolutionFilter](https://github.com/Kovnir/ImageEditor/blob/master/Tools/ConvolutionFilter.cs).
